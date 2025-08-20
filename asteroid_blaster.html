@@ -164,8 +164,8 @@
                 this.vy = (Math.random() - 0.5) * (2 + this.generation * 1);
                 this.angle = Math.random() * Math.PI * 2;
               
-                // Slower rotation speed for more realistic asteroid movement
-                this.rotation = (Math.random() - 0.5) * 0.02;
+                // Rotation speed: one full rotation every 5 seconds (2π radians / 300 frames)
+                this.rotation = (Math.random() - 0.5) * 0.042;
             }
             
             getSizeByGeneration() {
